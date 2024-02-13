@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 1053503963338-5983vd2dc8qoj6gpdv9ejlstf2nrdaj3.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+jwt:
+  issuer: ajufresh@gmail.com
+  secret_key: study-springboot
